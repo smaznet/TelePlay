@@ -5,6 +5,16 @@ account with a one-time code, and browse and stream the videos you send to the b
 account login, no Telegram library: the app speaks MTProto directly (`app/.../mtproto`), signing in as
 the bot, so files of any size stream with seeking and a resumable 2 GB cache.
 
+## Screenshots
+
+| Home | Library |
+|---|---|
+| ![Home](fastlane/metadata/android/en-US/images/tvScreenshots/01.png) | ![Library](fastlane/metadata/android/en-US/images/tvScreenshots/02.png) |
+
+| Player | Settings | Proxies |
+|---|---|---|
+| ![Player](fastlane/metadata/android/en-US/images/tvScreenshots/05.png) | ![Settings](fastlane/metadata/android/en-US/images/tvScreenshots/07.png) | ![Proxies](fastlane/metadata/android/en-US/images/tvScreenshots/09.png) |
+
 ## Build
 
 1. Get an `api_id` and `api_hash` at <https://my.telegram.org> (API development tools).

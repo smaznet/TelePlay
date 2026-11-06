@@ -1,0 +1,34 @@
+# Draft recipe for https://gitlab.com/fdroid/fdroiddata (metadata/com.smaznet.teleplay.fdroid.yml).
+# Replace every REPLACE_ME before opening the merge request.
+Categories:
+  - Multimedia
+License: GPL-3.0-only
+AuthorName: smaznet
+SourceCode: https://github.com/smaznet/TelePlay
+IssueTracker: https://github.com/smaznet/TelePlay/issues
+
+# Needs a Telegram bot and the Telegram network to do anything.
+AntiFeatures:
+  NonFreeNet:
+    en-US: Requires Telegram, a proprietary network service.
+
+RepoType: git
+Repo: https://github.com/smaznet/TelePlay.git
+
+Builds:
+  - versionName: '1.5'
+    versionCode: 5
+    commit: v1.5
+    subdir: app
+    gradle:
+      - fdroid
+    prebuild:
+      # The build refuses to run without Telegram API credentials (root local.properties, git-ignored).
+      # Use credentials registered at https://my.telegram.org for this project.
+      - echo 'telegram.apiId=4' >> ../local.properties
+      - echo 'telegram.apiHash=014b35b6184100b085b0d0572f9b5103' >> ../local.properties
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: '1.5'
+CurrentVersionCode: 5
