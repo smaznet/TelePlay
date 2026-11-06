@@ -1,0 +1,7 @@
+TelePlay plays the videos you send to your own Telegram bot on your Android TV. Enter a bot token, pair your Telegram account with a one-time code, and browse and stream your videos.
+
+- No personal account login and no Telegram library: the app speaks MTProto directly as your bot
+- Files of any size stream with seeking and a resumable cache
+- Control playback from Telegram with a pinned remote message
+- Back up and restore your playlist with /export and /import
+- SOCKS5 and MTProto proxy support

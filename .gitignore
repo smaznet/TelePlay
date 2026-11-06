@@ -1,0 +1,33 @@
+*.iml
+.gradle
+.kotlin
+local.properties
+.DS_Store
+build/
+/captures
+.externalNativeBuild
+.cxx
+
+# IDE
+/.idea/
+.vscode/
+
+# Prebuilt binaries: F-Droid builds from source and its scanner rejects committed APKs/AABs
+/app/release/
+*.apk
+*.aab
+*.aar
+*.jar
+!/gradle/wrapper/gradle-wrapper.jar
+
+# Signing material
+*.jks
+*.keystore
+keystore.properties
+
+# Tooling / planning (not part of the app source)
+/.specify
+/.impeccable
+/.claude
+/specs
+__pycache__/

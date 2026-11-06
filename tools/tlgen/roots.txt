@@ -1,0 +1,23 @@
+# Allowed Telegram API methods; mirrors specs/001-telegram-bot-player/contracts/mtproto-api-subset.md.
+# Types are generated as the transitive closure of these methods' parameters and results.
+help.getConfig
+auth.importBotAuthorization
+updates.getState
+updates.getDifference
+messages.getMessages
+upload.getFile
+invokeWithLayer
+initConnection
+# Remote control: only toward the authorized user's private chat, constitution v2.1.0 Principle III
+messages.sendMessage
+messages.editMessage
+messages.updatePinnedMessage
+messages.setBotCallbackAnswer
+# Update check: read-only, public update channel, constitution v2.2.0 Principles I and III
+contacts.resolveUsername
+channels.getMessages
+
+# Playlist backup: only toward the authorized user's private chat, constitution v2.3.0 Principle III
+upload.saveFilePart
+messages.sendMedia
+bots.setBotCommands
